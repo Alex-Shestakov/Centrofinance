@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="code/CSS/indexCSS.css">
+
+    <script src="code/JS/indexJS.js" defer></script>
+	<script src="code/JS/slider.js" defer></script>
+</head>
+<body class="body">
+			<div class="scrolling">
+				<div class="scrolling__item header" style="background: linear-gradient(25deg, rgba(242,239,196,1) 5%, rgba(177,208,213,1) 20%, rgba(242,142,2,0.80015756302521) 50%, rgba(177,208,213,1) 80%, rgba(242,239,196,1) 95%);">
+					<div class="languageButton">
+						<div class="language ru"><p>RU</p></div>
+						<div class="language kz"><p>KZ</p></div>
+					</div>
+					<div class="logo">
+						<div class="circle"></div>
+						Центрофинанс
+					</div>
+					<div class="headerDescription">
+						<p>Первый займ</p>
+						<p>до 145 000 ₸</p>
+						<p>под 0 %</p>
+					</div>
+					<div class="calc">
+						<form action="">
+							<div class="summ">
+								<p>Сумма:</p>
+								<p>10000₸</p> 
+							</div>
+							<input type="range" class="inputSumm" name="" id="" value="10000" min="10000" max="145000" step="1000" oninput="outputUpdateFirst(value)">
+							<input type="tel" class="inputPhone" value="+7 ">
+							<script>
+								function outputUpdateFirst(vol) {
+								const summ=document.querySelector(".calc .summ p:nth-child(2)");
+								summ.innerHTML=vol+"₸";
+							}
+							</script>
+							<div class="calcDescription">Хочешь быстрее? - Напиши нам!</div>
+							<div class="messengers">
+								<div class="messenger"><img src="image/index/messengers/telegram.png" alt="telegram"></div>
+								<div class="messenger"><img src="image/index/messengers/vk.png" alt="vk"></div>
+								<div class="messenger"><img src="image/index/messengers/watsap.png" alt="watsap"></div>
+							</div>
+							<input type="button" value="Получить деньги" class="calcSubmit menuButton">
+						</form>
+					</div>
+					<img class="figures figure__first" src="image/index/figure1.svg" alt="figure1">
+					<img class="figures figure__second" src="image/index/figure2.svg" alt="figure2">
+					<img class="figures woman" src="image/index/womans/hi_woman.svg" alt="woman">
+				</div>
+				<div class="menu">
+					<div class="menuBlock">
+						<form action="">
+							<p>Введите ваши данные</p>
+							<img src="image/index/cross.svg" alt="exitCross" class="exitCross">
+							<p>ИИН:</p>
+							<input type="text" name="iin" class="input__iin">
+							<p>Телефон:</p>
+							<input type="tel" class="inputPhone" value="+7 ">
+							<div class="summ">
+								<p>Сумма:</p>
+								<p>10000₸</p> 
+							</div>
+							<input type="range" class="inputSumm" name="" id="" value="10000" min="10000" max="145000" step="1000" oninput="outputUpdateSecond(value)">
+							<script>
+								function outputUpdateSecond(vol) {
+								const summ=document.querySelector(".menuBlock .summ p:nth-child(2)");
+								summ.innerHTML=vol+"₸";
+							}
+							</script>
+							<input type="submit" value="Получить деньги" class="calcSubmit">
+						</form>
+					</div>
+				</div>
+				<div class="scrolling__item steps">
+					<div class="nameOfBlock">
+						Получи деньги быстро
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/triangle1.png" alt="">
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/triangle2.png" alt="">
+					</div>
+					<div class="nativeText">
+						<p>Получи деньги быстро</p>
+					</div>
+					<div class="needAnimateItem scrollBar">
+					</div>
+					<div class="scrollBarBody">
+						<div class="needAnimateItem row">
+							<div class="stepCircle">
+								<div class="circle">1</div>
+							</div>
+							<div class="stepDescription">Оформите заявку на сайте</div>
+							<img src="image/index/womans/L_woman.png" alt="L_woman" class="L_woman">
+						</div>
+						<div class="needAnimateItem row">
+							<div class="stepCircle">
+								<div class="circle">2</div>
+							</div>
+							<div class="stepDescription">Дождитесь смс с одобрением</div>
+							<img src="image/index/womans/12h30m_woman.png" alt="12h30m_woman" class="clock_woman">
+						</div>
+						<div class="needAnimateItem row">
+							<div class="stepCircle">
+								<div class="circle">3</div>
+							</div>
+							<div class="stepDescription">Получите деньги в любом офисе</div>
+							<img src="image/index/womans/OTO_woman.png" alt="OTO_woman" class="OTO_woman">
+						</div>
+					</div>
+				</div>
+				<div class="scrolling__item conditions" style="background: linear-gradient(160deg, rgba(177,208,213,1) 20%, rgba(242,142,2,1) 50%, rgba(177,208,213,1) 80%);">
+					<div class="nameOfBlock">
+						Условия
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/triangle3.png" alt="">
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/triangle4.png" alt="">
+					</div>
+					<div class="nativeText">
+						<p>Условия</p>
+					</div>
+					<div class="sliderBlock">
+						<i id="left" class="needAnimateItem"><</i>
+						<div class="slider">
+							<div class="needAnimateItem slide" draggable="false">
+								<p>Сумма займа:</p>
+								<p>от 10 000 ₸ до 145 000 ₸</p>
+								<img src="image/index/womans/seated_woman.png" alt="seated_woman" class="seated_woman">
+							</div>
+							<div class="needAnimateItem slide" draggable="false">
+								<p>Срок займа:</p>
+								<p>от 1 до 45 дней</p>
+								<img src="image/index/womans/12h30m_woman.png" alt="12h30m_woman" class="clock_woman">
+							</div>
+							<div class="needAnimateItem slide" draggable="false">
+								<p>Процентная ставка:</p>
+								<p>0% первые 5 дней включительно, далее 1% в день</p>
+								<img src="image/index/womans/UwU_woman.png" alt="UwU_woman" class="UwU_woman">
+							</div>
+						</div>
+						<i id="right" class="needAnimateItem">></i>
+					</div>
+				</div>
+				<div class="scrolling__item requirements">
+					<div class="nameOfBlock">
+						Требования к заказчику
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/circle1.png" alt="">
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/circle2.png" alt="">
+					</div>
+					<div class="nativeText">
+						<p>Требования к заказчику</p>
+					</div>
+					<div class="requirementsBody">
+						<div class="requirement">
+							<div class="needAnimateItem requirementDescription">
+								<p>Возраст:</p>
+								<p>от 18 до 78 лет</p>
+							</div>
+							<div class="needAnimateItem requirementCircle"><div class="circle">1</div></div>
+						</div>
+						<div class="requirement">
+							<div class="needAnimateItem requirementDescription">
+								<p>Трудоустройство:</p>
+								<p>Официальное</p>
+							</div>
+							<div class="needAnimateItem requirementCircle"><div class="circle">2</div></div>
+						</div>
+						<div class="requirement">
+							<div class="needAnimateItem requirementDescription">
+								<p>Документы:</p>
+								<p>ИИН</p>
+							</div>
+							<div class="needAnimateItem requirementCircle"><div class="circle">3</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="scrolling__item redemptions" style="background: linear-gradient(32deg, rgba(177,208,213,1) 0%, rgba(61,31,43,1) 50%, rgba(177,208,213,1) 100%);">
+					<div class="nameOfBlock">
+						Погашение займа
+					</div>
+					<div class="scrollTriangle">
+						<img src="image/index/triangles/triangle5.png" alt="">
+					</div>
+					<div class="nativeText">
+						<p>Погашение займа</p>
+					</div>
+					<div class="sliderBlock">
+						<i id="left" class="needAnimateItem"><</i>
+						<div class="slider">
+							<div class="needAnimateItem slide" draggable="false">
+								<p>
+									Наличными в офисе, где вам выдали деньги и по банковской карте через личный кабинет.
+								</p>
+							</div>
+							<div class="needAnimateItem slide" draggable="false">
+								<p>
+									Если закрыть долг в период с 1 по 5 день оформления микрозайма, проценты не начисляются
+								</p>
+							</div>
+							<div class="needAnimateItem slide" draggable="false">
+								<p>
+									Оформляйте микрозаймы в "Центрофинанс" и используйте полученный в долг деньги эффектривно!
+								</p>
+							</div>
+						</div>
+						
+						<i id="right" class="needAnimateItem">></i>
+					</div>
+				</div>
+				<div class="scrolling__item footer" style="background: white">
+					<div class="column">
+						<div class="logo">
+							<div class="circle"></div>
+							Центрофинанс
+						</div>
+						<p>
+							Займы под низкий процент <br>
+							Быстрое решение по заявке
+						</p>
+						<p>ТОО МФО “Центрфинанс Казахстан” <br>
+							БИН: 200140020039  Лицензия <br>
+							16.21.0005.М от 05.05.2021 <br></p>
+					</div>
+					<div class="column">
+						<p>Финансовая отчётность</p>
+						<p>Документы</p>
+						<p>Урегулирование просроченной задолженности</p>
+					</div>
+					
+				</div>
+			</div>
+</body>
+</html>
